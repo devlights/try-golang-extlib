@@ -1,6 +1,7 @@
 package builder
 
 import (
+	"github.com/devlights/try-golang-extlib/internal/examples"
 	"github.com/devlights/try-golang/pkg/mappings"
 )
 
@@ -9,6 +10,7 @@ func BuildMappings() mappings.ExampleMapping {
 	m := mappings.NewSampleMapping()
 
 	m.MakeMapping(
+		examples.NewRegister(),
 	)
 
 	return m
