@@ -3,6 +3,7 @@ package examples
 import (
 	"github.com/devlights/try-golang-extlib/internal/examples/generate"
 	"github.com/devlights/try-golang-extlib/internal/examples/gocmp"
+	"github.com/devlights/try-golang-extlib/internal/examples/sets"
 	"github.com/devlights/try-golang/pkg/mappings"
 )
 
@@ -20,4 +21,5 @@ func NewRegister() mappings.Register {
 func (r *register) Regist(m mappings.ExampleMapping) {
 	generate.NewRegister().Regist(m)
 	gocmp.NewRegister().Regist(m)
+	sets.NewRegister().Regist(m)
 }
