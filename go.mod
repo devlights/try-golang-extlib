@@ -3,6 +3,7 @@ module github.com/devlights/try-golang-extlib
 go 1.16
 
 require (
+	github.com/adrg/xdg v0.3.3
 	github.com/cheekybits/genny v1.0.0
 	github.com/deckarep/golang-set v1.7.1
 	github.com/devlights/gomy v0.3.1
