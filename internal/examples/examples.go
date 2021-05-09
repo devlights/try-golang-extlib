@@ -5,6 +5,7 @@ import (
 	"github.com/devlights/try-golang-extlib/internal/examples/gocmp"
 	"github.com/devlights/try-golang-extlib/internal/examples/logging"
 	"github.com/devlights/try-golang-extlib/internal/examples/sets"
+	"github.com/devlights/try-golang-extlib/internal/examples/xdgspec"
 	"github.com/devlights/try-golang/pkg/mappings"
 )
 
@@ -24,4 +25,5 @@ func (r *register) Regist(m mappings.ExampleMapping) {
 	gocmp.NewRegister().Regist(m)
 	sets.NewRegister().Regist(m)
 	logging.NewRegister().Regist(m)
+	xdgspec.NewRegister().Regist(m)
 }
