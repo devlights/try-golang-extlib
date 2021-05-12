@@ -10,6 +10,6 @@ USER gitpod
 #     sudo rm -rf /var/lib/apt/lists/*
 #
 # More information: https://www.gitpod.io/docs/config-docker/
-RUN sudo apt update -q && \
-    sudo apt install -yq tree bc && \
+RUN sudo apt-get -q update && \
+    sudo apt-get install -yq tree bc && \
     sudo rm -rf /var/lib/apt/lists/*
