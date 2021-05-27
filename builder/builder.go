@@ -1,7 +1,7 @@
 package builder
 
 import (
-	"github.com/devlights/try-golang-extlib/internal/examples"
+	"github.com/devlights/try-golang-extlib/examples"
 	"github.com/devlights/try-golang/mapping"
 )
 

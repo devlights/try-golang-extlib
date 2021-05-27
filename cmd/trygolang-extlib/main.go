@@ -8,7 +8,7 @@ import (
 
 	"github.com/devlights/gomy/logops"
 	"github.com/devlights/gomy/strops"
-	"github.com/devlights/try-golang-extlib/internal/builder"
+	"github.com/devlights/try-golang-extlib/builder"
 	"github.com/devlights/try-golang/command"
 	"github.com/devlights/try-golang/mapping"
 )

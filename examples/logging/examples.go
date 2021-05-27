@@ -1,7 +1,7 @@
 package logging
 
 import (
-	"github.com/devlights/try-golang-extlib/internal/examples/logging/sentrygo"
+	"github.com/devlights/try-golang-extlib/examples/logging/sentrygo"
 	"github.com/devlights/try-golang/mapping"
 )
 

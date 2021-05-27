@@ -1,11 +1,11 @@
 package examples
 
 import (
-	"github.com/devlights/try-golang-extlib/internal/examples/generate"
-	"github.com/devlights/try-golang-extlib/internal/examples/gocmp"
-	"github.com/devlights/try-golang-extlib/internal/examples/logging"
-	"github.com/devlights/try-golang-extlib/internal/examples/sets"
-	"github.com/devlights/try-golang-extlib/internal/examples/xdgspec"
+	"github.com/devlights/try-golang-extlib/examples/generate"
+	"github.com/devlights/try-golang-extlib/examples/gocmp"
+	"github.com/devlights/try-golang-extlib/examples/logging"
+	"github.com/devlights/try-golang-extlib/examples/sets"
+	"github.com/devlights/try-golang-extlib/examples/xdgspec"
 	"github.com/devlights/try-golang/mapping"
 )
 
