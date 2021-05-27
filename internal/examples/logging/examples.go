@@ -2,7 +2,7 @@ package logging
 
 import (
 	"github.com/devlights/try-golang-extlib/internal/examples/logging/sentrygo"
-	"github.com/devlights/try-golang/pkg/mappings"
+	"github.com/devlights/try-golang/mapping"
 )
 
 type (
@@ -11,13 +11,13 @@ type (
 
 // impl check
 var (
-	_ mappings.Register = (*register)(nil)
+	_ mapping.Register = (*register)(nil)
 )
 
-func NewRegister() mappings.Register {
+func NewRegister() mapping.Register {
 	return new(register)
 }
 
-func (*register) Regist(m mappings.ExampleMapping) {
+func (*register) Regist(m mapping.ExampleMapping) {
 	sentrygo.NewRegister().Regist(m)
 }
