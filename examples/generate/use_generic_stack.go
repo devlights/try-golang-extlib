@@ -2,7 +2,7 @@ package generate
 
 import (
 	"github.com/devlights/gomy/output"
-	"github.com/devlights/try-golang-extlib/internal/examples/generate/stack"
+	"github.com/devlights/try-golang-extlib/examples/generate/stack"
 )
 
 // UseGenericStack -- genny で自動生成されたスタックを利用するサンプルです。

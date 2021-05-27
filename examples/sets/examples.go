@@ -1,7 +1,7 @@
 package sets
 
 import (
-	"github.com/devlights/try-golang/pkg/mappings"
+	"github.com/devlights/try-golang/mapping"
 )
 
 type (
@@ -9,13 +9,13 @@ type (
 )
 
 // NewRegister -- このパッケージ用のサンプルを登録する mappings.Register を生成します。
-func NewRegister() mappings.Register {
+func NewRegister() mapping.Register {
 	r := new(register)
 	return r
 }
 
 // Regist -- 登録します.
-func (r *register) Regist(m mappings.ExampleMapping) {
+func (r *register) Regist(m mapping.ExampleMapping) {
 	m["set_newset"] = NewSet
 	m["set_union"] = Union
 	m["set_difference"] = Difference
