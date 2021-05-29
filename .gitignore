@@ -69,6 +69,6 @@ fabric.properties
 
 tags
 
-trygolang-extlib
+bin/
 .target
 chinook.db

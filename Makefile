@@ -17,15 +17,9 @@ CMD_PKG=$(PKG_NAME)/cmd/trygolang-extlib
 
 EXAMPLE=""
 
-ifdef ComSpec
-	RM_CMD=del
-	BIN_NAME=.\trygolang-extlib.exe
-	BIN_DIR=.\cmd\trygolang-extlib
-else
-	RM_CMD=rm -f
-	BIN_NAME=./trygolang-extlib
-	BIN_DIR=./cmd/trygolang-extlib
-endif
+RM_CMD=rm -f
+BIN_NAME=trygolang-extlib
+BIN_DIR=bin
 
 .PHONY: all
 all: clean build test
@@ -47,7 +41,7 @@ _download_sqlite3_database:
 
 .PHONY: build
 build: prepare
-	$(GOBUILD) -race -o $(BIN_NAME) $(CMD_PKG)
+	$(GOBUILD) -race -o $(BIN_DIR)/$(BIN_NAME) $(CMD_PKG)
 
 .PHONY: test
 test: prepare
@@ -56,7 +50,7 @@ test: prepare
 .PHONY: clean
 clean: prepare
 	$(GOCLEAN) -i $(CMD_PKG)
-	$(RM_CMD) $(BIN_NAME)
+	$(RM_CMD) $(BIN_DIR)/$(BIN_NAME)
 
 .PHONY: install
 install: prepare
