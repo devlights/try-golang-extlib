@@ -10,4 +10,5 @@ require (
 	github.com/devlights/try-golang v0.2.7
 	github.com/getsentry/sentry-go v0.10.0
 	github.com/google/go-cmp v0.5.5
+	github.com/skanehira/clipboard-image/v2 v2.0.0
 )
