@@ -1,6 +1,7 @@
 package examples
 
 import (
+	"github.com/devlights/try-golang-extlib/examples/clipboard"
 	"github.com/devlights/try-golang-extlib/examples/generate"
 	"github.com/devlights/try-golang-extlib/examples/gocmp"
 	"github.com/devlights/try-golang-extlib/examples/logging"
@@ -21,6 +22,7 @@ func NewRegister() mapping.Register {
 
 // Regist は、advanced パッケージ配下に存在するサンプルを登録します.
 func (r *register) Regist(m mapping.ExampleMapping) {
+	clipboard.NewRegister().Regist(m)
 	generate.NewRegister().Regist(m)
 	gocmp.NewRegister().Regist(m)
 	sets.NewRegister().Regist(m)

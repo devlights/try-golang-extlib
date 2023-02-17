@@ -58,7 +58,7 @@ install: prepare
 
 .PHONY: run
 run: prepare
-	$(GORUN) -race $(CMD_PKG) -onetime -example ${EXAMPLE}
+	$(GORUN) $(CMD_PKG) -onetime -example ${EXAMPLE}
 
 .PHONY: generate
 generate: prepare
