@@ -1,6 +1,8 @@
 image: gitpod/workspace-full-vnc:latest
 
 tasks:
+  - name: install xclip
+    init: sudo apt update -q && sudo apt install -yq xclip
   - name: update go version and install tools
     command:
       rm -rf /home/gitpod/tmp &&

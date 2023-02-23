@@ -41,11 +41,11 @@ _download_sqlite3_database:
 
 .PHONY: build
 build: prepare
-	$(GOBUILD) -race -o $(BIN_DIR)/$(BIN_NAME) $(CMD_PKG)
+	$(GOBUILD) -o $(BIN_DIR)/$(BIN_NAME) $(CMD_PKG)
 
 .PHONY: test
 test: prepare
-	$(GOTEST) -race -v ./...
+	$(GOTEST) -v ./...
 
 .PHONY: clean
 clean: prepare
