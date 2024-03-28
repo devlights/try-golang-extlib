@@ -15,10 +15,10 @@ type (
 
 // NewTStack -- 新しいスタックを生成して返します.
 //
-//noinspection GoUnusedExportedFunction
+// noinspection GoUnusedExportedFunction
 func NewTStack() *TStack {
 	v := new(TStack)
-	v.items = make([]T, 0, 0)
+	v.items = make([]T, 0)
 	return v
 }
 

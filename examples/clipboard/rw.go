@@ -17,7 +17,7 @@ func ReadWrite() error {
 	// クリップボードに書き込み
 	err = cb.Write(buf)
 	if err != nil {
-		return err
+		return fmt.Errorf("clipboard.Write() fariled: %w", err)
 	}
 
 	// クリップボードから読み込み
@@ -27,12 +27,12 @@ func ReadWrite() error {
 
 	r, err = cb.Read()
 	if err != nil {
-		return err
+		return fmt.Errorf("clipboard.Read() fariled: %w", err)
 	}
 
 	_, err = io.Copy(buf, r)
 	if err != nil {
-		return err
+		return fmt.Errorf("io.Copy() fariled: %w", err)
 	}
 
 	fmt.Println(buf.String())

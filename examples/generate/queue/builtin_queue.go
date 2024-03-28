@@ -13,10 +13,10 @@ type (
 
 // NewBoolQueue -- 新しいキューを生成して返します.
 //
-//noinspection GoUnusedExportedFunction
+// noinspection GoUnusedExportedFunction
 func NewBoolQueue() *BoolQueue {
 	q := new(BoolQueue)
-	q.items = make([]bool, 0, 0)
+	q.items = make([]bool, 0)
 	return q
 }
 
@@ -60,10 +60,10 @@ type (
 
 // NewStringQueue -- 新しいキューを生成して返します.
 //
-//noinspection GoUnusedExportedFunction
+// noinspection GoUnusedExportedFunction
 func NewStringQueue() *StringQueue {
 	q := new(StringQueue)
-	q.items = make([]string, 0, 0)
+	q.items = make([]string, 0)
 	return q
 }
 

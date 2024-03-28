@@ -1,7 +1,6 @@
 package xdgspec
 
 import (
-	"io/ioutil"
 	"os"
 	"path/filepath"
 	"runtime"
@@ -52,12 +51,12 @@ func FileOp() error {
 		output.Stdoutl("[exists?]", "存在しない")
 	}
 
-	if err = ioutil.WriteFile(dataFile, []byte("helloworld\n"), 0644); err != nil {
+	if err = os.WriteFile(dataFile, []byte("helloworld\n"), 0644); err != nil {
 		output.Stderrl("[ioutil.WriteFile]", err)
 		return err
 	}
 
-	if bytes, readErr := ioutil.ReadFile(dataFile); readErr == nil {
+	if bytes, readErr := os.ReadFile(dataFile); readErr == nil {
 		output.Stdoutl("[ioutil.ReadFile]", string(bytes))
 	}
 

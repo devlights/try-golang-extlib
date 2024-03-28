@@ -15,10 +15,10 @@ type (
 
 // NewTQueue -- 新しいキューを生成して返します.
 //
-//noinspection GoUnusedExportedFunction
+// noinspection GoUnusedExportedFunction
 func NewTQueue() *TQueue {
 	q := new(TQueue)
-	q.items = make([]T, 0, 0)
+	q.items = make([]T, 0)
 	return q
 }
 

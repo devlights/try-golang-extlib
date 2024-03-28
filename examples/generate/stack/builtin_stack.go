@@ -14,7 +14,7 @@ type (
 // NewBoolStack -- 新しいスタックを生成して返します.
 func NewBoolStack() *BoolStack {
 	v := new(BoolStack)
-	v.items = make([]bool, 0, 0)
+	v.items = make([]bool, 0)
 	return v
 }
 
@@ -40,7 +40,7 @@ type (
 // NewStringStack -- 新しいスタックを生成して返します.
 func NewStringStack() *StringStack {
 	v := new(StringStack)
-	v.items = make([]string, 0, 0)
+	v.items = make([]string, 0)
 	return v
 }
 
@@ -66,7 +66,7 @@ type (
 // NewIntStack -- 新しいスタックを生成して返します.
 func NewIntStack() *IntStack {
 	v := new(IntStack)
-	v.items = make([]int, 0, 0)
+	v.items = make([]int, 0)
 	return v
 }
 

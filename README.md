@@ -7,12 +7,5 @@
 
 ```shell script
 $ go version
-go version go1.16 linux/arm64
-```
-
-## Run
-
-```shell script
-$ cd cmd/trygolang-extlib
-$ go run .
+go version go1.22.1 linux/amd64
 ```
