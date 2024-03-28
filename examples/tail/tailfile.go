@@ -43,14 +43,13 @@ func TailFile() error {
 	var (
 		rootCtx            = context.Background()
 		mainCtx, mainCxl   = context.WithCancel(rootCtx)
-		g, gCtx            = errgroup.WithContext(mainCtx)
 		writeCtx, writeCxl = context.WithTimeout(mainCtx, 5300*time.Millisecond)
+		g, gCtx            = errgroup.WithContext(mainCtx)
 	)
 	defer mainCxl()
+	defer writeCxl()
 
 	g.Go(func() error {
-		defer writeCxl()
-
 		for {
 			select {
 			case <-writeCtx.Done():
@@ -125,6 +124,11 @@ LOOP:
 
 			log.Printf("[tail] %s", line.Text)
 		}
+	}
+
+	err = g.Wait()
+	if err != nil {
+		return err
 	}
 
 	return nil
