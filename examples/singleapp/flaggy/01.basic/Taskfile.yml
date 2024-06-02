@@ -1,0 +1,11 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  default:
+    cmds:
+      - go run . help
+      - go run . version
+      - go run . -v1 helloworld --val2 999 -v3
+      - go run . --val1 hello --val2 888
