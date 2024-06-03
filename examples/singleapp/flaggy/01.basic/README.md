@@ -4,6 +4,12 @@
 
 [flaggy](https://github.com/integrii/flaggy) パッケージは、サブコマンドも扱うことが可能なシンプルなフラグライブラリです。
 
+以下のライブラリであると記載されています。以下、引用。
+
+> Sensible and fast command-line flag parsing with excellent support for subcommands and positional values. Flags can be at any position. Flaggy has no required project or package layout like Cobra requires, and no external dependencies!
+
+> (サブコマンドと位置引数の優れたサポートで、コマンドラインのフラグを賢明かつ高速に解析します。フラグはどの位置にも置くことができます。Flaggyは、Cobraが必要とするようなプロジェクトやパッケージのレイアウトを必要とせず、外部依存関係もありません！)
+
 ライブラリが必要とする依存関係がとても少ないので、導入し易いです。
 
 [flaggy](https://github.com/integrii/flaggy) を使って、標準の ```flag``` パッケージと同じような定義をするには以下のようにします。
@@ -52,3 +58,8 @@ task: [default] go run . -v1 helloworld --val2 999 -v3
 task: [default] go run . --val1 hello --val2 888
 {Val1:hello Val2:888 Val3:false}
 ```
+
+## 参考情報
+
+- https://github.com/integrii/flaggy
+- https://ericgreer.info/post/a-better-flags-package-for-go/
