@@ -1,0 +1,18 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  default:
+    cmds:
+      - task: show-help
+      - task: run
+  show-help:
+    cmds:
+      - go run . help
+      - go run . subA help
+      - go run . subA subsubA help
+  run:
+    cmds:
+      - go run . --val 111
+      - go run . subA subsubA -v1 helloworld
