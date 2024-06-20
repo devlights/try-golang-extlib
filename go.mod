@@ -5,6 +5,7 @@ go 1.22
 require (
 	github.com/adrg/xdg v0.4.0
 	github.com/briandowns/spinner v1.23.0
+	github.com/caarlos0/env/v11 v11.1.0
 	github.com/cheekybits/genny v1.0.0
 	github.com/deckarep/golang-set v1.8.0
 	github.com/devlights/gomy v0.6.0
@@ -28,6 +29,7 @@ require (
 	github.com/fsnotify/fsnotify v1.7.0 // indirect
 	github.com/goccy/go-reflect v1.2.0 // indirect
 	github.com/integrii/flaggy v1.5.2
+	github.com/k0kubun/pp/v3 v3.2.0
 	golang.org/x/sys v0.20.0 // indirect
 	golang.org/x/text v0.15.0 // indirect
 	gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7 // indirect
