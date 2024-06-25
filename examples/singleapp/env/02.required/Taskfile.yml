@@ -1,0 +1,24 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  APP_NAME: app
+
+tasks:
+  default:
+    cmds:
+      - task: run
+  build:
+    cmds:
+      - go build -o {{.APP_NAME}}
+  run:
+    deps: [ build ]
+    cmds:
+      - ./{{.APP_NAME}}
+    env:
+      MYENV1: helloworld
+      #MYENV2: 999
+  clean:
+    cmds:
+      - rm -f ./{{.APP_NAME}}
