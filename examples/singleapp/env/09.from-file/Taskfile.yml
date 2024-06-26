@@ -1,0 +1,26 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  DATA_FILE: data.txt
+  APP_NAME: app
+
+tasks:
+  default:
+    cmds:
+      - task: run
+  build:
+    cmds:
+      - go build -o {{.APP_NAME}}
+  run:
+    deps: [ build ]
+    cmds:
+      - echo -n helloworld > ./{{.DATA_FILE}}
+      - defer: rm -f ./{{.DATA_FILE}}
+      - ./{{.APP_NAME}}
+    env:
+      DATA: ./{{.DATA_FILE}}
+  clean:
+    cmds:
+      - rm -f ./{{.APP_NAME}}
