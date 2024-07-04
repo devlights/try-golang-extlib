@@ -22,4 +22,13 @@ func run() error {
 	pp.Println(os.Getenv("HELLO"))
 
 	return nil
+
+	/*
+	   $ task
+	   task: [build] go build -o app .
+	   task: [run] echo -n "HELLO=WORLD" > ./.env
+	   task: [run] ./app
+	   "WORLD"
+	   task: [run] rm -f ./.env
+	*/
 }
