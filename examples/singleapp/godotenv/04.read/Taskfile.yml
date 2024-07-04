@@ -1,0 +1,20 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  ENV_FILE: .env
+  APP_NAME: app{{.exeExt}}
+tasks:
+  default:
+    cmds:
+      - task: build
+      - task: run
+  build:
+    cmds:
+      - go build -o {{.APP_NAME}} .
+  run:
+    cmds:
+      - echo -n "HELLO=WORLD" > ./{{.ENV_FILE}}
+      - defer: rm -f ./{{.ENV_FILE}}
+      - ./{{.APP_NAME}}
