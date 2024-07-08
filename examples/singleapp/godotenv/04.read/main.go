@@ -1,6 +1,8 @@
 package main
 
 import (
+	"os"
+
 	"github.com/joho/godotenv"
 	"github.com/k0kubun/pp/v3"
 )
@@ -24,15 +26,19 @@ func run() error {
 	}
 
 	pp.Println(myEnv["HELLO"])
+	if _, ok := os.LookupEnv("HELLO"); !ok {
+		pp.Println("環境変数側にHELLOは存在しない")
+	}
 
 	return nil
 
 	/*
-	   $ task
-	   task: [build] go build -o app .
-	   task: [run] echo -n "HELLO=WORLD" > ./.env
-	   task: [run] ./app
-	   "WORLD"
-	   task: [run] rm -f ./.env
+		$ task
+		task: [build] go build -o app .
+		task: [run] echo -n "HELLO=WORLD" > ./.env
+		task: [run] ./app
+		"WORLD"
+		"環境変数側にHELLOは存在しない"
+		task: [run] rm -f ./.env
 	*/
 }
