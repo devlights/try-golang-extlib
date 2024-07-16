@@ -39,6 +39,7 @@ require (
 	github.com/integrii/flaggy v1.5.2
 	github.com/joho/godotenv v1.5.1
 	github.com/k0kubun/pp/v3 v3.2.0
+	github.com/ledongthuc/pdf v0.0.0-20240201131950-da5b75280b06
 	golang.org/x/sys v0.21.0 // indirect
 	golang.org/x/text v0.16.0 // indirect
 	gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7 // indirect
