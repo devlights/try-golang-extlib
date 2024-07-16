@@ -1,0 +1,15 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  PDF_FILE: helloworld.pdf
+  SEARCH_WORD: へろーわーるど
+
+tasks:
+  build:
+    cmds:
+      - go build -o app{{.exeExt}} .
+  run:
+    cmds:
+      - ./app{{.exeExt}} -in {{.PDF_FILE}} -word "{{.SEARCH_WORD}}"
