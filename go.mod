@@ -14,15 +14,23 @@ require (
 	github.com/google/go-cmp v0.6.0
 	github.com/nokute78/go-bit/v2 v2.2.1
 	github.com/nxadm/tail v1.4.11
+	github.com/pdfcpu/pdfcpu v0.8.0
 	github.com/skanehira/clipboard-image/v2 v2.0.0
 	golang.org/x/sync v0.7.0
 )
 
 require (
 	github.com/fatih/color v1.17.0 // indirect
+	github.com/hhrutter/lzw v1.0.0 // indirect
+	github.com/hhrutter/tiff v1.0.1 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
+	github.com/mattn/go-runewidth v0.0.15 // indirect
+	github.com/pkg/errors v0.9.1 // indirect
+	github.com/rivo/uniseg v0.4.7 // indirect
+	golang.org/x/image v0.15.0 // indirect
 	golang.org/x/term v0.21.0 // indirect
+	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
 
 require (

@@ -1,0 +1,20 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  IPA_PDF_URL: https://www.ipa.go.jp/security/vuln/websecurity/ug65p900000196e2-att/000017316.pdf
+  PDF_FILE: test.pdf
+  OUT_DIR: out
+
+tasks:
+  prepare:
+    cmds:
+      - wget -O {{.PDF_FILE}} {{.IPA_PDF_URL}}
+  build:
+    cmds:
+      - go build -o app{{.exeExt}} .
+  run:
+    cmds:
+      - mkdir -p {{.OUT_DIR}}
+      - ./app{{.exeExt}} -in {{.PDF_FILE}} -out {{.OUT_DIR}} 
