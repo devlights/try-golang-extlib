@@ -19,5 +19,5 @@ tasks:
       # crc32 コマンドは libarchive-zip-perl パッケージでインストールできる
       - crc32 main.go
       # crc32 コマンドが存在しない場合は gzip コマンドの出力からCRC32を得ることも出来る
-      #- gzip -1 -c main.go | tail -c 8 | head -c 4 | hexdump -e '"%04x"'; echo ''
+      #- gzip -1 -c main.go | tail -c 8 | head -c 4 | hexdump -e '"%08x"'; echo ''
       - wc --bytes main.go
