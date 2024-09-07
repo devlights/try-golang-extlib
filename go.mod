@@ -4,18 +4,18 @@ go 1.23
 
 require (
 	github.com/adrg/xdg v0.5.0
-	github.com/bodgit/sevenzip v1.5.1
+	github.com/bodgit/sevenzip v1.5.2
 	github.com/briandowns/spinner v1.23.1
 	github.com/caarlos0/env/v11 v11.2.2
 	github.com/cheekybits/genny v1.0.0
 	github.com/deckarep/golang-set v1.8.0
 	github.com/devlights/gomy v0.6.0
-	github.com/devlights/try-golang v0.5.25
+	github.com/devlights/try-golang v0.5.26
 	github.com/getsentry/sentry-go v0.28.1
 	github.com/google/go-cmp v0.6.0
 	github.com/nokute78/go-bit/v2 v2.2.1
 	github.com/nxadm/tail v1.4.11
-	github.com/pdfcpu/pdfcpu v0.8.0
+	github.com/pdfcpu/pdfcpu v0.8.1
 	github.com/skanehira/clipboard-image/v2 v2.0.0
 	golang.org/x/sync v0.8.0
 )
@@ -39,8 +39,8 @@ require (
 	github.com/rivo/uniseg v0.4.7 // indirect
 	github.com/ulikunitz/xz v0.5.12 // indirect
 	go4.org v0.0.0-20230225012048-214862532bf5 // indirect
-	golang.org/x/image v0.19.0 // indirect
-	golang.org/x/term v0.23.0 // indirect
+	golang.org/x/image v0.20.0 // indirect
+	golang.org/x/term v0.24.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
 
@@ -51,7 +51,7 @@ require (
 	github.com/joho/godotenv v1.5.1
 	github.com/k0kubun/pp/v3 v3.2.0
 	github.com/ledongthuc/pdf v0.0.0-20240201131950-da5b75280b06
-	golang.org/x/sys v0.24.0 // indirect
-	golang.org/x/text v0.17.0 // indirect
+	golang.org/x/sys v0.25.0 // indirect
+	golang.org/x/text v0.18.0 // indirect
 	gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7 // indirect
 )
