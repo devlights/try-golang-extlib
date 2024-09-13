@@ -3,6 +3,7 @@ module github.com/devlights/try-golang-extlib
 go 1.23
 
 require (
+	github.com/Masterminds/semver/v3 v3.3.0
 	github.com/adrg/xdg v0.5.0
 	github.com/bodgit/sevenzip v1.5.2
 	github.com/briandowns/spinner v1.23.1
