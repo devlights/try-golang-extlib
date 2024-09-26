@@ -5,6 +5,7 @@ go 1.23
 require (
 	github.com/Masterminds/semver/v3 v3.3.0
 	github.com/adrg/xdg v0.5.0
+	github.com/beevik/etree v1.4.1
 	github.com/bodgit/sevenzip v1.5.2
 	github.com/briandowns/spinner v1.23.1
 	github.com/caarlos0/env/v11 v11.2.2

@@ -1,0 +1,17 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  XML_FILE: langs.xml
+
+tasks:
+  default:
+    cmds:
+      - task: gen
+      - defer: rm -f {{.XML_FILE}}
+      - go run .
+  gen:
+    dir: ../write
+    cmds:
+      - go run . > ../read/{{.XML_FILE}}
