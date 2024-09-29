@@ -13,18 +13,25 @@ var (
 )
 
 func init() {
-	logger = slog.New(slog.NewJSONHandler(os.Stdout, &slog.HandlerOptions{ReplaceAttr: func(groups []string, a slog.Attr) slog.Attr {
-		switch {
-		case a.Key == slog.LevelKey:
-			return slog.Attr{}
-		case a.Key == slog.TimeKey:
-			return slog.Attr{}
-		case a.Key == slog.MessageKey:
-			return slog.Attr{Key: "tag", Value: a.Value}
-		default:
-			return a
+	var (
+		opt = &slog.HandlerOptions{
+			ReplaceAttr: func(groups []string, a slog.Attr) slog.Attr {
+				switch {
+				case a.Key == slog.LevelKey:
+					return slog.Attr{}
+				case a.Key == slog.TimeKey:
+					return slog.Attr{}
+				case a.Key == slog.MessageKey:
+					return slog.Attr{Key: "tag", Value: a.Value}
+				default:
+					return a
+				}
+			},
 		}
-	}}))
+		handler = slog.NewJSONHandler(os.Stdout, opt)
+	)
+
+	logger = slog.New(handler)
 }
 
 func main() {
