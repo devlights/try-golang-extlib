@@ -47,6 +47,7 @@ require (
 )
 
 require (
+	github.com/bcicen/jstream v1.0.1
 	github.com/fsnotify/fsnotify v1.7.0 // indirect
 	github.com/goccy/go-reflect v1.2.0 // indirect
 	github.com/integrii/flaggy v1.5.2

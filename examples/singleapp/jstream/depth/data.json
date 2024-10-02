@@ -1,0 +1,12 @@
+[
+    {
+      "id": 1,
+      "name": "Item 1",
+      "items": [ "item-1", "item-2", "item-3" ]
+    },
+    {
+      "id": 2,
+      "name": "Item 2",
+      "items": [ "item-4", "item-5", "item-6" ]
+    }
+  ]
