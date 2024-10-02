@@ -1,0 +1,9 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  default:
+    cmds:
+      - for: ['0', '1', '2', '3']
+        cmd: go run main.go -depth {{.ITEM}}
