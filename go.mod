@@ -7,6 +7,7 @@ require (
 	github.com/adrg/xdg v0.5.0
 	github.com/beevik/etree v1.4.1
 	github.com/bodgit/sevenzip v1.5.2
+	github.com/bojanz/currency v1.2.3
 	github.com/briandowns/spinner v1.23.1
 	github.com/caarlos0/env/v11 v11.2.2
 	github.com/cheekybits/genny v1.0.0
@@ -26,6 +27,7 @@ require (
 	github.com/andybalholm/brotli v1.1.0 // indirect
 	github.com/bodgit/plumbing v1.3.0 // indirect
 	github.com/bodgit/windows v1.0.1 // indirect
+	github.com/cockroachdb/apd/v3 v3.2.1 // indirect
 	github.com/fatih/color v1.17.0 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
 	github.com/hashicorp/go-multierror v1.1.1 // indirect
