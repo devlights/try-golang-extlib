@@ -1,0 +1,27 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  GREETING: Hello, World!
+
+tasks:
+  default:
+    cmds:
+      - task: clean
+      - task: build
+      - task: run
+  build:
+    cmds:
+      - go build -o app main.go
+  run:
+    cmds:
+      - cmd: ./app
+        ignore_error: true
+      - cmd: ./app |& pp
+        ignore_error: true
+    env:
+      GOTRACEBACK: all
+  clean:
+    cmds:
+      - rm -f ./app
