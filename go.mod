@@ -15,6 +15,7 @@ require (
 	github.com/devlights/gomy v0.7.0
 	github.com/devlights/try-golang v0.5.39
 	github.com/google/go-cmp v0.7.0
+	github.com/mattn/go-isatty v0.0.20
 	github.com/nokute78/go-bit/v2 v2.2.1
 	github.com/nxadm/tail v1.4.11
 	github.com/pdfcpu/pdfcpu v0.11.0
@@ -34,7 +35,6 @@ require (
 	github.com/hhrutter/tiff v1.0.2 // indirect
 	github.com/klauspost/compress v1.18.0 // indirect
 	github.com/mattn/go-colorable v0.1.14 // indirect
-	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mattn/go-runewidth v0.0.16 // indirect
 	github.com/pierrec/lz4/v4 v4.1.22 // indirect
 	github.com/pkg/errors v0.9.1 // indirect

@@ -1,0 +1,14 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  default:
+    cmds:
+      - go build -o app main.go
+      - defer: rm -f app
+      - ./app
+      - ./app | tee
+      - ./app > out.txt
+      - defer: rm -f out.txt
+      - echo hello | ./app
