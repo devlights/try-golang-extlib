@@ -22,10 +22,10 @@ func main() {
 	// ioctl(2)にTCGETSを渡すと指定のディスクリプタが指す端末情報を取得できる.
 	//
 	// 	#include <sys/ioctl.h>
-	//	#include <termios.h>
+	// 	#include <termios.h>
 	//
 	// 	struct termios tty = {};
-	//  ioctl(1, TCGETS, &tty);
+	// 	ioctl(1, TCGETS, &tty);
 	//
 	// ちなみに、isattyという名前は is-atty ではなく、is-a-tty という意味。
 	//
