@@ -14,6 +14,7 @@ require (
 	github.com/deckarep/golang-set v1.8.0
 	github.com/devlights/gomy v0.7.0
 	github.com/devlights/try-golang v0.5.39
+	github.com/go-task/slim-sprig/v3 v3.0.0
 	github.com/google/go-cmp v0.7.0
 	github.com/mattn/go-isatty v0.0.20
 	github.com/nokute78/go-bit/v2 v2.2.1
