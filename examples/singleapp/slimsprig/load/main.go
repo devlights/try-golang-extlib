@@ -54,12 +54,12 @@ func run() error {
 	)
 	slices.Sort(funcNames)
 	{
-		for i, name := range funcNames {
-			fmt.Fprintf(log.Writer(), "%-*s", len(maxWords)+1, name)
-
-			if (i+1)%nChunks == 0 {
-				log.Println("")
+		for chunk := range slices.Chunk(funcNames, nChunks) {
+			for name := range slices.Values(chunk) {
+				fmt.Fprintf(log.Writer(), "%-*s", len(maxWords)+1, name)
 			}
+
+			log.Println("")
 		}
 	}
 	log.Println("")
@@ -68,7 +68,6 @@ func run() error {
 
 	/*
 		$ task
-		task: [default] go run .
 		HELLOHELLOHELLO 2025-09-08
 		hello-world
 		------- funcs
