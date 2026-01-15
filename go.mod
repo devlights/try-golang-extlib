@@ -6,6 +6,7 @@ require (
 	github.com/Masterminds/semver/v3 v3.4.0
 	github.com/adrg/xdg v0.5.3
 	github.com/beevik/etree v1.6.0
+	github.com/bmatcuk/doublestar/v4 v4.9.2
 	github.com/bodgit/sevenzip v1.6.1
 	github.com/bojanz/currency v1.3.1
 	github.com/briandowns/spinner v1.23.2
